@@ -81,7 +81,7 @@ public class ahorcado {
         String nombre = "";
         while (nombre.length() == 0) {
             System.out.print("\nIngrese su nombre: ");
-            nombre = scanner.nextLine().trim().toUpperCase(); // trim + toUpperCase
+            nombre = scanner.nextLine().trim().toUpperCase();
             if (nombre.length() == 0) {
                 System.out.println("⚠ El nombre no puede estar vacío.");
             }
@@ -93,7 +93,7 @@ public class ahorcado {
     static void jugar() {
         String nombreJugador = leerNombreJugador();
 
-        // Variables de estado (tabla de la guía)
+
         int intentosRestantes = MAX_INTENTOS;
         double puntaje = 100.0;
         boolean juegoGanado = false;
@@ -101,7 +101,7 @@ public class ahorcado {
         boolean pistaMostrada = false;
         char ultimaLetra = ' ';
         int aciertos = 0;
-        int totalIntentos = 0; // letras válidas arriesgadas
+        int totalIntentos = 0;
         int turnos = 0;
 
         String palabraSecreta = PALABRAS[(int) (Math.random() * PALABRAS.length)];
